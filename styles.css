@@ -1,0 +1,14 @@
+body{
+    color:red;
+    background-color: lightblue;
+    padding:0 3em 0 3em;
+    margin:0;
+}
+#section{
+    margin:0;
+    padding:10px;
+    width:100%;
+    background-color: antiquewhite;
+    height:max-content;
+    height:100%;
+}
