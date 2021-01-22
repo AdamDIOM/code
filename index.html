@@ -3,19 +3,34 @@
 <head>
     <title>LearnToCodes</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+
 </head>
 <body>
 
     <header>
-        Learn to Code!
+        <div id="left">
+            <p>Learn to Code!</p>
+        </div>
+        <div id="right">
+            <select id="languageSelector" name="language" onchange="changeLanguage()">
+                <option value="default">Select a Language</option>
+                <option value="CSharp">C#</option>
+                <option value="Python">Python</option>
+            </select>
+        </div>
+        
     </header>
     <div id="main">
         <div id="nav">
-
+            <ul>
+                <li>1</li>
+                <li>2</li>
+            </ul>
         </div>
 
         <div id="section">
-            
+            section
         </div>
     </div>
     
@@ -23,6 +38,7 @@
     <footer>
         &copy Adam 2021
     </footer>
+
 
 </body>
 </html>
