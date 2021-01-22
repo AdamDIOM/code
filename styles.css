@@ -3,12 +3,46 @@ body{
     background-color: lightblue;
     padding:0 3em 0 3em;
     margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    background-color: teal;
+    font-size: large;
+    height: 5vh;
+    width:100%;
+    padding:2.5vh 10px 2.5vh 10px;
+    margin:0;
+}
+#main{
+    height:80vh;
+    padding:0;
+    margin:0;
+    width:100%;
+}
+#nav{
+    display:block;
+    float:left;
+    height: 75vh;
+    margin:0;
+    padding:2.5vh 1vw 2.5vh 1vw;
+    background-color: darkslateblue;
+    width: calc(20% - 2vw);
 }
 #section{
+    display: block;
+    float:right;
     margin:0;
-    padding:10px;
-    width:100%;
+    padding:2.5vh 1vw 2.5vh 1vw;
+    width: calc(70% - 2vw);
     background-color: antiquewhite;
-    height:max-content;
-    height:100%;
+    height:75vh;
+}
+footer{
+    margin:0;
+    text-align: center;
+    display:block;
+    background-color: slategray;
+    height: 5vh;
+    width:100%;
+    padding:2.5vh 10px 2.5vh 10px;
 }
