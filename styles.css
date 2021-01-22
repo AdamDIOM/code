@@ -33,7 +33,7 @@ header{
     float:right;
     margin:0;
     padding:2.5vh 1vw 2.5vh 1vw;
-    width: calc(70% - 2vw);
+    width: calc(80% - 2vw);
     background-color: antiquewhite;
     height:75vh;
 }
