@@ -1,0 +1,11 @@
+{
+
+    "input" : {
+        "name" : "Input",
+        "code" : "<variable> = Console.ReadLine();"
+    },
+    "output" : {
+        "name" : "Output",
+        "code" : "Console.WriteLine(\"Text to output\")"
+    }
+};

@@ -8,6 +8,8 @@ function loadLanguageData(url){
     head.appendChild(script);
 }
 
+
+
 function changeLanguage(){
     loadLanguageData(`/${document.getElementById("languageSelector").value}.js`)
 }
