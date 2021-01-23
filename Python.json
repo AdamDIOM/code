@@ -1,7 +1,7 @@
 {
     "input" : {
         "name" : "Input",
-        "code" : "<variable> = input();"
+        "code" : "&ltvariable&gt = input();"
     },
     "output" : {
         "name" : "Output",

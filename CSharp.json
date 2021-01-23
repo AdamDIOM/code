@@ -2,7 +2,7 @@
 
     "input" : {
         "name" : "Input",
-        "code" : "<variable> = Console.ReadLine();"
+        "code" : "&ltvariable&gt = Console.ReadLine();"
     },
     "output" : {
         "name" : "Output",
@@ -10,6 +10,6 @@
     },
     "if" : {
         "name" : "If",
-        "code" : "If (condition) { \n <code to execute>; \n }"
+        "code" : "If (condition) { <br> &nbsp &lt;code to execute&gt;; <br> }"
     }
 }
