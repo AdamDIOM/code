@@ -17,9 +17,10 @@ header{
 #languageSelector{
     height:9vh;
     width:30vh;
-    max-width:40vw;
+    max-width:30vw;
     text-align-last:center;
-    font-size:3vh;
+    font-size:calc(1vmin + 0.5vmax);
+    overflow-wrap:break-word;
 }
 
 header #left{
