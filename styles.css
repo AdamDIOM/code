@@ -36,7 +36,7 @@ header #right{
     /*padding:0 10px 0 10px;*/
     margin:0;
     width:100%;
-    background-color: yellow;
+    background-color: rgb(41, 34, 80);
 }
 #nav ul{
     list-style-type:none;
