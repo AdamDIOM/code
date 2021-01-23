@@ -19,12 +19,12 @@ async function loadLanguages(){
 };
 function populateSection(item){
     section.innerHTML = "";
-    section.innerHTML += "<h1>" + item.name + "</h1>";
+    section.innerHTML += "<h1 id=\"sectionHeading\">" + item.name + "</h1>";
     section.innerHTML += "<code>" + String(item.code) + "</code>"; 
 };
 async function changeLanguage(){
     var section = document.getElementById("section");
-    section.innerHTML = "<h1>Select code snippet from the menu</h1>";
+    section.innerHTML = "<h1 id=\"sectionHeading\">Select code snippet from the menu</h1>";
     document.getElementById("default").disabled = "disabled";
     response = await fetch(`./Languages/${document.getElementById("languageSelector").value}.json`);
     json = await response.json();
