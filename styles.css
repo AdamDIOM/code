@@ -41,7 +41,7 @@ header #right{
     border-top:1px solid grey;
     border-bottom: 1px solid grey;
     color:green;
-    padding:0 0.5vw 0 0.5vw;
+    padding:0.5vh 0.5vw 0.5vh 0.5vw;
     overflow-wrap:break-word;
     height:auto;
 }

@@ -10,7 +10,8 @@ function test(){
 function populateSection(item){
     var section = document.getElementById("section");
     section.innerHTML = "";
-    section.innerHTML += "<h1>" + "hi" + "</h1>";
+    section.innerHTML += "<h1>" + item.name + "</h1>";
+    section.innerHTML += "<code>" + String(item.code) + "</code>"; 
 }
 
 async function changeLanguage(){
