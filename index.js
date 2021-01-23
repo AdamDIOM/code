@@ -18,7 +18,7 @@ async function changeLanguage(){
     var section = document.getElementById("section");
     section.innerHTML = "<h1>Select code snippet from the menu</h1>";
     document.getElementById("default").disabled = "disabled";
-    response = await fetch(`./${document.getElementById("languageSelector").value}.json`);
+    response = await fetch(`./Languages/${document.getElementById("languageSelector").value}.json`);
     json = await response.json();
     //console.log(json["input"].name);
     var list = document.getElementById("list");
