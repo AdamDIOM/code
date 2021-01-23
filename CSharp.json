@@ -7,5 +7,9 @@
     "output" : {
         "name" : "Output",
         "code" : "Console.WriteLine(\"Text to output\")"
+    },
+    "if" : {
+        "name" : "If",
+        "code" : "If (condition) { \n <code to execute>; \n }"
     }
-};
+}

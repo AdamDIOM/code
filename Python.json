@@ -1,4 +1,10 @@
 {
-    "name" : "Input",
-    "code" : "<variable> = input()"
-};
+    "input" : {
+        "name" : "Input",
+        "code" : "<variable> = input();"
+    },
+    "output" : {
+        "name" : "Output",
+        "code" : "Print(\"Text to output\")"
+    }
+}
