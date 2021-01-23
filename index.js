@@ -1,15 +1,28 @@
 console.log("JavaScript Loaded");
 
-function loadLanguageData(url){    
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = url;
-    head.appendChild(script);
+
+var response;
+var json;
+function test(){
+    console.log(json);
 }
 
-
-
-function changeLanguage(){
-    loadLanguageData(`/${document.getElementById("languageSelector").value}.js`)
-}
+async function changeLanguage(){
+    response = await fetch(`${document.getElementById("languageSelector").value}.json`);
+    json = await response.json();
+    //console.log(json["input"].name);
+    var list = document.getElementById("list");
+    list.innerHTML = "";
+    for(item in json){
+        //console.log(item)
+        console.log(json[item].name);
+        var li = document.createElement('li');
+        li.addEventListener("click", function(){
+            for(item in json){
+                if(json[item].name == this.innerHTML) console.log(json[item].code);
+            }
+        })
+        li.innerHTML = json[item].name;
+        list.appendChild(li);
+    }
+};
