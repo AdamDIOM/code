@@ -1,5 +1,5 @@
 body{
-    color:red;
+    color:palevioletred;
     background-color: rgb(19, 35, 41);
     padding:0 3em 0 3em;
     margin:0;
@@ -13,6 +13,11 @@ header{
     width:98%;
     padding:0.5vh 1% 0.5vh 1%;
     margin:0;
+}
+#languageSelector{
+    height:9vh;
+    width:30vh;
+    text-align-last:center;
 }
 
 header #left{
