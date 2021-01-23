@@ -23,11 +23,11 @@ header{
     overflow-wrap:break-word;
 }
 
-header #left{
+#left{
     display:block;
     float: left;
 }
-header #right{
+#right{
     display:block;
     float:right;
 }
