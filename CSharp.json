@@ -2,7 +2,7 @@
 
     "input" : {
         "name" : "Input",
-        "code" : "&ltvariable&gt = Console.ReadLine();"
+        "code" : "&lt;variable&gt; = Console.ReadLine();"
     },
     "output" : {
         "name" : "Output",
@@ -10,6 +10,10 @@
     },
     "if" : {
         "name" : "If",
-        "code" : "If (condition) { <br> &nbsp &lt;code to execute&gt;; <br> }"
+        "code" : "If (condition) { <br> &nbsp; &lt;code to execute&gt;; <br> }"
+    },
+    "for" : {
+        "name" : "For Loop",
+        "code" : "For (int &lt;counter&gt; = 0; &lt;counter&gt; &lt;condition&gt;; &lt;counter&gt;++ { <br> &nbsp; &lt;code to execute&gt;; <br> }"
     }
 }
