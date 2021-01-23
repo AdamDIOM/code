@@ -15,6 +15,7 @@ function populateSection(item){
 }
 
 async function changeLanguage(){
+    document.getElementById("default").disabled = "disabled";
     response = await fetch(`./${document.getElementById("languageSelector").value}.json`);
     json = await response.json();
     //console.log(json["input"].name);
@@ -27,7 +28,7 @@ async function changeLanguage(){
         li.addEventListener("click", function(){
             for(item in json){
                 if(json[item].name == this.innerHTML){
-                    console.log(json[item].code);
+                    //console.log(json[item].code);
                     populateSection(json[item]);
                 } 
                 
