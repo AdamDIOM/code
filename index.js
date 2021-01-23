@@ -15,7 +15,7 @@ async function changeLanguage(){
     list.innerHTML = "";
     for(item in json){
         //console.log(item)
-        console.log(json[item].name);
+        //console.log(json[item].name);
         var li = document.createElement('li');
         li.addEventListener("click", function(){
             for(item in json){
