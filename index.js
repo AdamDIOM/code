@@ -7,8 +7,14 @@ function test(){
     console.log(json);
 }
 
+function populateSection(item){
+    var section = document.getElementById("section");
+    section.innerHTML = "";
+    section.innerHTML += "<h1>" + "hi" + "</h1>";
+}
+
 async function changeLanguage(){
-    response = await fetch(`${document.getElementById("languageSelector").value}.json`);
+    response = await fetch(`./${document.getElementById("languageSelector").value}.json`);
     json = await response.json();
     //console.log(json["input"].name);
     var list = document.getElementById("list");
@@ -19,7 +25,11 @@ async function changeLanguage(){
         var li = document.createElement('li');
         li.addEventListener("click", function(){
             for(item in json){
-                if(json[item].name == this.innerHTML) console.log(json[item].code);
+                if(json[item].name == this.innerHTML){
+                    console.log(json[item].code);
+                    populateSection(json[item]);
+                } 
+                
             }
         })
         li.innerHTML = json[item].name;
