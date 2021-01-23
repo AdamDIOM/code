@@ -3,18 +3,20 @@ console.log("JavaScript Loaded");
 
 var response;
 var json;
+
 function test(){
     console.log(json);
 }
 
 function populateSection(item){
-    var section = document.getElementById("section");
     section.innerHTML = "";
     section.innerHTML += "<h1>" + item.name + "</h1>";
     section.innerHTML += "<code>" + String(item.code) + "</code>"; 
 }
 
 async function changeLanguage(){
+    var section = document.getElementById("section");
+    section.innerHTML = "<h1>Select code snippet from the menu</h1>";
     document.getElementById("default").disabled = "disabled";
     response = await fetch(`./${document.getElementById("languageSelector").value}.json`);
     json = await response.json();
