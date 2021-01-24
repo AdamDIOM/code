@@ -1,6 +1,12 @@
 {
     "heading" : {
         "name" : "insert name of the code snippet here",
-        "code" : "insert code here using &lt; and &gt; for < and >, <br> for a line break and &nbsp; for a tab"
+        "code" : "insert code here using &lt; and &gt; for < and >, <br> for a line break and &nbsp; for a tab",
+        "examples" : [
+            {
+                "description" : "describe the code below",
+                "code" : "insert code here as it would run if actually used in the programming language"
+            }
+        ]
     }
 }
