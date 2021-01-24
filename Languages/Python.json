@@ -14,7 +14,7 @@
         "code" : "print(\"Text to output\")",
         "examples" : [
             {
-                "description" : "This code outputs the text 'Hello World",
+                "description" : "This code outputs the text 'Hello World'",
                 "code" : "print(\"Hello World\")"
             }
         ]

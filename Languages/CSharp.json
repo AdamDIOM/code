@@ -48,13 +48,33 @@
             }
         ]
     },
+    "switch" :{
+        "name" : "Switch",
+        "code" : "select(&lt;variable&gt;) { <br> &nbsp; case &lt;condition&gt;: <br> &nbsp;&nbsp; &lt;code to execute&gt;; <br> &nbsp;&nbsp; break; <br> &nbsp; case &lt;condition&gt;: <br> &nbsp;&nbsp; &lt;code to execute&gt;; <br> &nbsp;&nbsp; break; <br> &nbsp; default: <br> &nbsp;&nbsp; &lt;code to execute&gt;; <br> &nbsp;&nbsp; break; <br> }",
+        "examples" : [
+            {
+                "description" : "This code checks to see if the number in variable inputNumber is a 5, a 10 or neither and outputs accordingly",
+                "code" : "select(inputNumber) { <br> &nbsp; case 5: <br> &nbsp;&nbsp; Console.WriteLine(\"The number input was 5\"); <br> &nbsp;&nbsp; break; <br> &nbsp; case 10: <br> &nbsp;&nbsp; Console.WriteLine(\"The number input was 10\"); <br> &nbsp;&nbsp; break; <br> &nbsp; default: <br> &nbsp;&nbsp; Console.WriteLine(\"The number input was not 5 or 10\"); <br> &nbsp;&nbsp; break; <br> }"
+            }
+        ]
+    },
     "for" : {
         "name" : "For Loop",
-        "code" : "for (int &lt;counter&gt; = 0; &lt;counter&gt; &lt;condition&gt;; &lt;counter&gt;++ { <br> &nbsp; &lt;code to execute&gt;; <br> }",
+        "code" : "for (int &lt;counter&gt; = 0; &lt;counter&gt; &lt;condition&gt;; &lt;counter&gt;++) { <br> &nbsp; &lt;code to execute&gt;; <br> }",
         "examples" : [
             {
                 "description" : "This code loops from 0 to 4 and outputs the number on each iteration",
-                "code" : "for (int i = 0; i < 5; i++ { <br> &nbsp; Console.WriteLine(i); <br> }"
+                "code" : "for (int i = 0; i < 5; i++) { <br> &nbsp; Console.WriteLine(i); <br> }"
+            }
+        ]
+    },
+    "while" : {
+        "name" : "While Loop",
+        "code" : "while (&lt;condition&gt;) { <br> &nbsp; &lt;code to execute&gt;; <br> }",
+        "examples" : [
+            {
+                "description" : "This code outputs the variable number whilst number is greater than 5",
+                "code" : "while (number > 5) { <br> &nbsp; Console.WriteLine(number); <br> &nbsp; number = number - 1; <br> }"
             }
         ]
     }
