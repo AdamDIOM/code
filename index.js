@@ -20,7 +20,19 @@ async function loadLanguages(){
 function populateSection(item){
     section.innerHTML = "";
     section.innerHTML += "<h1 id=\"sectionHeading\">" + item.name + "</h1>";
+    section.innerHTML += "<p>Syntax</p>"
     section.innerHTML += "<code>" + String(item.code) + "</code>"; 
+    if(item.examples.length > 1){
+        section.innerHTML += "<h2>Examples</h2>"
+    }
+    else{
+        section.innerHTML += "<h2>Example</h2>"
+    }
+    //section.innerHTML += "<code>" + String(item.examples) + "</code>";
+    for(example in item.examples){
+        section.innerHTML += "<p>" + item.examples[example].description + "</p>";
+        section.innerHTML += "<code>" + item.examples[example].code + "</code>";
+    }
 };
 async function changeLanguage(){
     var section = document.getElementById("section");
