@@ -1,10 +1,22 @@
 {
     "input" : {
         "name" : "Input",
-        "code" : "&ltvariable&gt = input();"
+        "code" : "&ltvariable&gt = input()",
+        "examples" : [
+            {
+                "description" : "This code takes the user input and stores it in the variable userInput",
+                "code" : "userInput = input()"
+            }
+        ]
     },
     "output" : {
         "name" : "Output",
-        "code" : "Print(\"Text to output\")"
+        "code" : "print(\"Text to output\")",
+        "examples" : [
+            {
+                "description" : "This code outputs the text 'Hello World",
+                "code" : "print(\"Hello World\")"
+            }
+        ]
     }
 }

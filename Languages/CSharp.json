@@ -2,18 +2,60 @@
 
     "input" : {
         "name" : "Input",
-        "code" : "&lt;variable&gt; = Console.ReadLine();"
+        "code" : "&lt;variable&gt; = Console.ReadLine();",
+        "examples" : [
+            {
+                "description" : "This code stores the user input into the variable myVariable",
+                "code" : "myVariable = Console.ReadLine();"
+            }
+        ]
     },
     "output" : {
         "name" : "Output",
-        "code" : "Console.WriteLine(\"Text to output\")"
+        "code" : "Console.WriteLine(\"Text to output\")",
+        "examples" : [
+            {
+                "description" : "This code outputs the words 'Hello World'",
+                "code" : "Console.WriteLine(\"Hello World\")"
+            },
+            {
+                "description" : "This code outputs the sum of 4 and 7",
+                "code" : "Console.WriteLine(4 + 7)"
+            }
+        ]
+    },
+    "variables" : {
+        "name" : "Variables",
+        "code" : "&lt;type&gt; &lt;variable name&gt;;",
+        "examples" : [
+            {
+                "description" : "This code creates an integer called number",
+                "code" : "int number;"
+            },
+            {
+                "description" : "This code creates a string called text and sets the value to 'Hello World'",
+                "code" : "string text = \"Hello World\""
+            }
+        ]
     },
     "if" : {
         "name" : "If",
-        "code" : "If (condition) { <br> &nbsp; &lt;code to execute&gt;; <br> }"
+        "code" : "if (condition) { <br> &nbsp; &lt;code to execute&gt;; <br> }",
+        "examples" : [
+            {
+                "description" : "This code checks if the variable number is greater than 5. If it is, it outputs 'Number greater than 5.'",
+                "code" : "if (number > 5) { <br> &nbsp; &lt;Console.WriteLine(\"Number greater than 5.\")&gt;; <br> }"
+            }
+        ]
     },
     "for" : {
         "name" : "For Loop",
-        "code" : "For (int &lt;counter&gt; = 0; &lt;counter&gt; &lt;condition&gt;; &lt;counter&gt;++ { <br> &nbsp; &lt;code to execute&gt;; <br> }"
+        "code" : "for (int &lt;counter&gt; = 0; &lt;counter&gt; &lt;condition&gt;; &lt;counter&gt;++ { <br> &nbsp; &lt;code to execute&gt;; <br> }",
+        "examples" : [
+            {
+                "description" : "This code loops from 0 to 4 and outputs the number on each iteration",
+                "code" : "for (int i = 0; i < 5; i++ { <br> &nbsp; Console.WriteLine(i); <br> }"
+            }
+        ]
     }
 }
