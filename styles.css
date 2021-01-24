@@ -26,6 +26,7 @@ header{
     font-family:inherit;
     background-color: antiquewhite;
     color:darkslategray;
+    border-radius: 15px;;
 }
 #left{
     display:block;
@@ -66,12 +67,7 @@ header{
     height: 75vh;
     margin:0;
     display:block;
-    overflow-y:scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-#section::-webkit-scrollbar, #nav::-webkit-scrollbar{
-    display:none;
+    overflow-y:auto;
 }
 #nav{
     float:left;
@@ -101,6 +97,16 @@ h2 #link:active{
 #sectionHeading{
     margin:0;
 }
+
+code{
+    background-color:lightgrey;
+    padding:1vmin;
+    border-radius: 10px;
+    display:block;
+    width:auto;
+    color:black;
+}
+
 footer{
     margin:0;
     text-align: center;
