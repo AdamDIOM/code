@@ -82,6 +82,16 @@ header{
 h1{
     font-size:calc(5vmin + 1vmax);
 }
+h2, h2 #link{
+    font-size:calc(2vmin + 1vmax);
+    color:darkslategray;
+}
+h2 #link:hover{
+    color:forestgreen;
+}
+h2 #link:active{
+    color: lime;
+}
 #section{
     float:right;
     width: calc(80% - 2vw);
