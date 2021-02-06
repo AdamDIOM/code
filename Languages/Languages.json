@@ -1,4 +1,5 @@
 {
     "CSharp" : "C#",
-    "Python" : "Python"
+    "Python" : "Python",
+    "Cpp" : "C++"
 }
