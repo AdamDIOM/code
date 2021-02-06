@@ -2,7 +2,7 @@
 
     "input" : {
         "name" : "Input",
-        "code" : "&lt;variable&gt; = std::cin &lgt&lgt myVariable;",
+        "code" : "&lt;variable&gt; = std::cin &gt&gt myVariable;",
         "examples" : [
             {
                 "description" : "This code stores the user input into the variable myVariable",
