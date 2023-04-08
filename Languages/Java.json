@@ -1,0 +1,16 @@
+{
+    "output" : {
+        "name" : "Output",
+        "code" : "system.out.println(\"Text to output\")",
+        "examples" : [
+            {
+                "description" : "This code outputs the words 'Hello World'",
+                "code" : "system.out.println(\"Hello World\")"
+            },
+            {
+                "description" : "This code outputs the sum of 9 and 1",
+                "code" : "system.out.println(9 + 1)"
+            }
+        ]
+    }
+}
